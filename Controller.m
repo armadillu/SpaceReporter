@@ -116,7 +116,7 @@ int counter=0;
 		unsigned long long total = [[info objectForKey:@"NSFileSystemSize"] unsignedLongLongValue];
 		
 		
-		NSLog(@"## %@ ##\n\nfree: %llu \ntotal:%llu", [volumes objectAtIndex:i] , free, total);
+		//NSLog(@"## %@ ##\n\nfree: %llu \ntotal:%llu", [volumes objectAtIndex:i] , free, total);
 		float ratio = 0;
 		
 		if (total != 0){
