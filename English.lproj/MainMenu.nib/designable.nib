@@ -104,7 +104,7 @@
 			<object class="NSWindowTemplate" id="304452085">
 				<int key="NSWindowStyleMask">131</int>
 				<int key="NSWindowBacking">2</int>
-				<string key="NSWindowRect">{{617, 564}, {286, 287}}</string>
+				<string key="NSWindowRect">{{617, 544}, {238, 307}}</string>
 				<int key="NSWTFlags">1886912512</int>
 				<string key="NSWindowTitle">About SpaceReporter</string>
 				<string key="NSWindowClass">NSPanel</string>
@@ -119,7 +119,7 @@
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSImageView" id="102544476">
 							<reference key="NSNextResponder" ref="190215339"/>
-							<int key="NSvFlags">256</int>
+							<int key="NSvFlags">301</int>
 							<object class="NSMutableSet" key="NSDragTypes">
 								<bool key="EncodedWithXMLCoder">YES</bool>
 								<object class="NSArray" key="set.sortedObjects">
@@ -132,7 +132,7 @@
 									<string>NeXT TIFF v4.0 pasteboard type</string>
 								</object>
 							</object>
-							<string key="NSFrame">{{79, 148}, {128, 128}}</string>
+							<string key="NSFrame">{{62, 167}, {114, 114}}</string>
 							<reference key="NSSuperview" ref="190215339"/>
 							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView" ref="578984450"/>
@@ -153,8 +153,8 @@
 						</object>
 						<object class="NSTextField" id="578984450">
 							<reference key="NSNextResponder" ref="190215339"/>
-							<int key="NSvFlags">256</int>
-							<string key="NSFrame">{{82, 128}, {124, 17}}</string>
+							<int key="NSvFlags">301</int>
+							<string key="NSFrame">{{57, 142}, {124, 17}}</string>
 							<reference key="NSSuperview" ref="190215339"/>
 							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView" ref="798045641"/>
@@ -191,7 +191,7 @@
 						</object>
 						<object class="NSScrollView" id="466932189">
 							<reference key="NSNextResponder" ref="190215339"/>
-							<int key="NSvFlags">256</int>
+							<int key="NSvFlags">290</int>
 							<object class="NSMutableArray" key="NSSubviews">
 								<bool key="EncodedWithXMLCoder">YES</bool>
 								<object class="NSClipView" id="48581643">
@@ -202,7 +202,7 @@
 										<object class="NSTextView" id="525592198">
 											<reference key="NSNextResponder" ref="48581643"/>
 											<int key="NSvFlags">2322</int>
-											<string key="NSFrame">{{0, 4}, {285, 56}}</string>
+											<string key="NSFrameSize">{237, 56}</string>
 											<reference key="NSSuperview" ref="48581643"/>
 											<reference key="NSWindow"/>
 											<reference key="NSNextKeyView" ref="432562323"/>
@@ -313,7 +313,7 @@
 													<nil key="NSDelegate"/>
 												</object>
 												<reference key="NSTextView" ref="525592198"/>
-												<double key="NSWidth">285</double>
+												<double key="NSWidth">237</double>
 												<int key="NSTCFlags">1</int>
 											</object>
 											<object class="NSTextViewSharedData" key="NSSharedData">
@@ -373,7 +373,7 @@
 											<nil key="NSDelegate"/>
 										</object>
 									</object>
-									<string key="NSFrame">{{1, 1}, {285, 56}}</string>
+									<string key="NSFrame">{{1, 1}, {237, 56}}</string>
 									<reference key="NSSuperview" ref="466932189"/>
 									<reference key="NSWindow"/>
 									<reference key="NSNextKeyView" ref="525592198"/>
@@ -390,9 +390,7 @@
 													<integer value="5"/>
 													<object class="NSURL">
 														<nil key="NS.base"/>
-														<object class="NSMutableString" key="NS.relative">
-															<characters key="NS.bytes">file://localhost/Applications/Xcode.app/Contents/SharedFrameworks/DVTKit.framework/Resources/DVTIbeamCursor.tiff</characters>
-														</object>
+														<string key="NS.relative">file://localhost/Applications/Xcode.app/Contents/SharedFrameworks/DVTKit.framework/Resources/DVTIbeamCursor.tiff</string>
 													</object>
 												</object>
 											</object>
@@ -429,11 +427,11 @@
 									<double key="NSPercent">0.94565218687057495</double>
 								</object>
 							</object>
-							<string key="NSFrameSize">{287, 58}</string>
+							<string key="NSFrameSize">{239, 58}</string>
 							<reference key="NSSuperview" ref="190215339"/>
 							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView" ref="48581643"/>
-							<int key="NSsFlags">133186</int>
+							<int key="NSsFlags">133122</int>
 							<reference key="NSVScroller" ref="432562323"/>
 							<reference key="NSHScroller" ref="244554213"/>
 							<reference key="NSContentView" ref="48581643"/>
@@ -441,8 +439,8 @@
 						</object>
 						<object class="NSTextField" id="798045641">
 							<reference key="NSNextResponder" ref="190215339"/>
-							<int key="NSvFlags">256</int>
-							<string key="NSFrame">{{44, 110}, {200, 17}}</string>
+							<int key="NSvFlags">301</int>
+							<string key="NSFrame">{{19, 123}, {200, 17}}</string>
 							<reference key="NSSuperview" ref="190215339"/>
 							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView" ref="458575991"/>
@@ -463,8 +461,8 @@
 						</object>
 						<object class="NSButton" id="458575991">
 							<reference key="NSNextResponder" ref="190215339"/>
-							<int key="NSvFlags">256</int>
-							<string key="NSFrame">{{112, 73}, {62, 31}}</string>
+							<int key="NSvFlags">301</int>
+							<string key="NSFrame">{{88, 73}, {62, 31}}</string>
 							<reference key="NSSuperview" ref="190215339"/>
 							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView" ref="466932189"/>
@@ -492,7 +490,7 @@
 							</object>
 						</object>
 					</object>
-					<string key="NSFrameSize">{286, 287}</string>
+					<string key="NSFrameSize">{238, 307}</string>
 					<reference key="NSSuperview"/>
 					<reference key="NSWindow"/>
 					<reference key="NSNextKeyView" ref="102544476"/>
@@ -780,7 +778,7 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{0, 810}, {286, 287}}</string>
+					<string>{{0, 790}, {238, 307}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
