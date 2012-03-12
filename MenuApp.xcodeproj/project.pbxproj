@@ -11,9 +11,8 @@
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		BB4BF3D5150EAD5000374B02 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = BB4BF3D4150EAD5000374B02 /* icon.icns */; };
 		BB7644A20C9AC6AB00A42FF9 /* paypal.gif in Resources */ = {isa = PBXBuildFile; fileRef = BB7644A10C9AC6AB00A42FF9 /* paypal.gif */; };
-		BB9C01C50FF975B4000F9D47 /* cat.icns in Resources */ = {isa = PBXBuildFile; fileRef = BB9C01C40FF975B4000F9D47 /* cat.icns */; };
-		BB9C01E50FF97774000F9D47 /* cat128.png in Resources */ = {isa = PBXBuildFile; fileRef = BB9C01E40FF97774000F9D47 /* cat128.png */; };
 		BBAE0B250C68D26F003E9A38 /* Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = BBAE0B240C68D26F003E9A38 /* Controller.m */; };
 		BBBF836C0CAAF03500B6D8C0 /* MyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBF836B0CAAF03500B6D8C0 /* MyWindow.m */; };
 /* End PBXBuildFile section */
@@ -29,10 +28,9 @@
 		32CA4F630368D1EE00C91783 /* MenuApp_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuApp_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* SpaceReporter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceReporter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB4BF3D4150EAD5000374B02 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
 		BB7644A10C9AC6AB00A42FF9 /* paypal.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = paypal.gif; sourceTree = "<group>"; };
 		BB922DF70C998B500079B05F /* constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = constants.h; sourceTree = "<group>"; };
-		BB9C01C40FF975B4000F9D47 /* cat.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = cat.icns; sourceTree = "<group>"; };
-		BB9C01E40FF97774000F9D47 /* cat128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cat128.png; sourceTree = "<group>"; };
 		BBAE0B230C68D26F003E9A38 /* Controller.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Controller.h; sourceTree = "<group>"; };
 		BBAE0B240C68D26F003E9A38 /* Controller.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = Controller.m; sourceTree = "<group>"; };
 		BBBF836A0CAAF03500B6D8C0 /* MyWindow.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MyWindow.h; sourceTree = "<group>"; };
@@ -105,8 +103,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				BB9C01E40FF97774000F9D47 /* cat128.png */,
-				BB9C01C40FF975B4000F9D47 /* cat.icns */,
+				BB4BF3D4150EAD5000374B02 /* icon.icns */,
 				BB7644A10C9AC6AB00A42FF9 /* paypal.gif */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
@@ -177,8 +174,7 @@
 				8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */,
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				BB7644A20C9AC6AB00A42FF9 /* paypal.gif in Resources */,
-				BB9C01C50FF975B4000F9D47 /* cat.icns in Resources */,
-				BB9C01E50FF97774000F9D47 /* cat128.png in Resources */,
+				BB4BF3D5150EAD5000374B02 /* icon.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

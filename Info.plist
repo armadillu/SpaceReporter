@@ -9,7 +9,7 @@
 	<key>CFBundleGetInfoString</key>
 	<string>SpaceReporter 1.0, Oriol Ferrer Mesià © 2009</string>
 	<key>CFBundleIconFile</key>
-	<string>cat.icns</string>
+	<string>icon.icns</string>
 	<key>CFBundleIdentifier</key>
 	<string>cat.uri.SpaceReporter</string>
 	<key>CFBundleInfoDictionaryVersion</key>
