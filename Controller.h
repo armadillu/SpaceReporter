@@ -18,5 +18,6 @@
 
 
 - (IBAction)do:(id)sender;
+- (IBAction)updateNow:(id)sender;
 
 @end

@@ -34,7 +34,7 @@ int counter=0;
 	NSArray * keys = [NSArray  arrayWithObjects: (id)NSFontAttributeName, (id)NSShadowAttributeName, (id)NSForegroundColorAttributeName, nil ];
 
 	if ([keys count] != [objs count] ){
-		NSLog(@"quit! Missing Lucida Grande typeface!?");
+		NSLog(@"Exit! Missing Lucida Grande typeface!?");
 		exit(0);
 	}
 
@@ -54,9 +54,11 @@ int counter=0;
 	NSString * realName = [[NSFileManager defaultManager] displayNameAtPath: name];
 	NSSize nameSize = [realName sizeWithAttributes: attr];
 	
-	NSImage * im = [ [NSImage alloc] initWithSize: NSMakeSize( MENU_HW + NAME_OFFSET + nameSize.width + TRAILING_OFFSET, MENU_HW ) ];
+	int w = MENU_HW + NAME_OFFSET + nameSize.width + TRAILING_OFFSET + 1.5;
+	NSImage * im = [ [NSImage alloc] initWithSize: NSMakeSize( w, MENU_HW ) ];
 	[im lockFocus];	
 
+	NSBezierPath * p1 = [NSBezierPath bezierPath];
 	NSBezierPath * p2 = [NSBezierPath bezierPath];
 		
 	if (ratio > 1.0)
@@ -64,7 +66,14 @@ int counter=0;
 	if (ratio < 0.0)
 		ratio = 0.0;
 	
-	NSLog(@"ratio: %f",ratio );
+	//NSLog(@"ratio: %f",ratio );
+	[p1 appendBezierPathWithArcWithCenter:NSMakePoint(IMG_HEIGHT*0.5f, IMG_HEIGHT*0.5f) 
+								   radius: IMG_HEIGHT * 0.5f 
+							   startAngle: 0
+								 endAngle: 360 
+	];
+	[p1 closePath];
+	
 	[p2 appendBezierPathWithArcWithCenter:NSMakePoint(IMG_HEIGHT*0.5f, IMG_HEIGHT*0.5f) 
 								   radius: IMG_HEIGHT * 0.5f 
 							   startAngle: 90.0f - 360.0f * ratio
@@ -73,6 +82,10 @@ int counter=0;
 	
 	[p2 lineToPoint:NSMakePoint(IMG_HEIGHT * 0.5f , IMG_HEIGHT * 0.5f )];
 	[p2 closePath];
+	
+	NSColor * c2 = [NSColor colorWithDeviceRed: [color redComponent] green:[color greenComponent] blue:[color blueComponent] alpha: 0.33];
+	[c2 set];
+	[p1 fill];
 	
 	[color set];
 	[p2 fill];
@@ -125,7 +138,7 @@ int counter=0;
 			NSColor* pieColor;
 		
 			if (ratio < 0.75f)
-				pieColor = [NSColor grayColor];
+				pieColor = [NSColor colorWithDeviceRed: 0.5f green:0.5f blue: 0.5f alpha:1];
 			else{
 				float fullness = (ratio - 0.75f) * 4.0f; // this makes fullness into  [0 .. 1]
 				pieColor = [NSColor colorWithDeviceRed: 0.5f + 0.4f * fullness  green:0.5f - 0.4f * fullness blue: 0.5f - 0.4f * fullness alpha:1];
@@ -168,6 +181,10 @@ int counter=0;
 	NSImage* i = [self createIconImage];
 	[_statusItem setImage:i];
 	[i release];
+}
+
+- (IBAction)updateNow:(id)sender{
+	[self refresh];
 }
 
 
