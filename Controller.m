@@ -5,10 +5,7 @@
 int counter=0;
 
 - (id)init{
-	
-	timer = [NSTimer scheduledTimerWithTimeInterval:15.00f target:self selector:@selector(refresh) userInfo:nil repeats:YES];
-	[[NSRunLoop currentRunLoop] addTimer: timer forMode:NSEventTrackingRunLoopMode];
-	
+		
 	return self;
 }
 
@@ -46,6 +43,10 @@ int counter=0;
     [_statusItem setMenu:menu];
 	[_statusItem setTarget:self];
 	[self refresh];
+
+	timer = [NSTimer scheduledTimerWithTimeInterval:15.0f target:self selector:@selector(refresh) userInfo:nil repeats:YES];
+	[[NSRunLoop currentRunLoop] addTimer: timer forMode:NSEventTrackingRunLoopMode];
+
 }
 
 
@@ -153,7 +154,7 @@ int counter=0;
 		}
 	}
 	
-	NSSize total;
+	NSSize total; total.width = 0; total.height = 0;
 	for (i=0; i< [images count]; i++){
 		total.width += ( [[images objectAtIndex:i] size].width);
 	}
@@ -165,7 +166,7 @@ int counter=0;
 	offsets.width = 3;
 	for (i=0; i< [images count]; i++){
 		NSImage * curImg = [images objectAtIndex:i];
-		[curImg compositeToPoint: NSMakePoint(offsets.width, PIE_V_OFFSET) operation: NSCompositeSourceOver];
+		[curImg compositeToPoint: NSMakePoint( floor(offsets.width), PIE_V_OFFSET) operation: NSCompositeSourceOver];
 		[curImg release];
 		offsets.width += [curImg size].width;
 	}
